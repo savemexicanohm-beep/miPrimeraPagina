@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitarras Guerrero - Productos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #111;
+            display: flex;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #b8b8ff;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #333;
+            border-left: 5px solid #111;
+            padding-left: 10px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 16px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">INICIO</a>
+        <a href="productos.html">PRODUCTOS</a>
+    </div>
+
+    <div class="container">
+        <h1>Nuestros Productos</h1>
+
+        <h2 class="section-title">Guitarras Acústicas</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://i.imgur.com/zQ6P1o2.jpg" alt="Guitarra Acústica 1">
+                <h3>Acústica Guerrera A1</h3>
+                <p>Madera de cedro rojo, tono cálido y profundo. Ideal para compositores.</p>
+                <p class="price">$4,200 MXN</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Guitarras Eléctricas</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://i.imgur.com/0uC2V2L.jpg" alt="Guitarra Eléctrica 1">
+                <h3>Eléctrica Guerrera E-X</h3>
+                <p>Sonido potente, pastillas dobles y acabado premium.</p>
+                <p class="price">$6,800 MXN</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/00uX4nd.jpg" alt="Guitarra Eléctrica 2">
+                <h3>Eléctrica Guerrera Shadow</h3>
+                <p>Diseño moderno, versátil para rock y metal.</p>
+                <p class="price">$7,150 MXN</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
